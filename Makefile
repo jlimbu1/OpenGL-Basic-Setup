@@ -1,8 +1,8 @@
 CC = g++
-EXE = UpperCut.exe
+EXE = main.exe
 CFLAGS= -std=c++11 -Wall -L.\deps\lib -I.\deps\include
 LINKER_FLAGS = -lglew32 -lglfw3 -lopengl32 -lgdi32 -luser32 -lkernel32 -lglu32 -static-libstdc++ -static
-OBJS = main.o menu.o player.o
+OBJS = main.o
 
 SRC_DIR = ./src
 SRC_FILES := $(wildcard $(SRC_DIR)/*.cpp)
